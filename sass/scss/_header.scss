@@ -1,0 +1,20 @@
+
+.tituloPrincipal{
+	font: $fuente-principal;
+	text-align: center;
+	color: $color-texto-fondoazul;
+}
+
+.barraFondo{
+	background-color: $color-principal; 
+	width: 100%;
+	margin: 10px 20px 10px 20px;
+	padding: 20px 100px 20px 100px;
+	border: double 10px #FFFFFF;
+
+}
+
+h1{
+	font-size: 20px;
+	color: blue;
+}

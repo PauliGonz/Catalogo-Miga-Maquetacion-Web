@@ -1,0 +1,43 @@
+
+nav{
+	background-color: lightyellow;
+	ul{
+		list-style-type: none;
+		li{
+			display: inline-block;
+			padding-left: 30px;
+			
+			a{
+				color: blue;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+.divFeedback{
+	@extend %divFeedback;
+}
+
+
+.etiqueta1{
+	@extend %etiquetaFeedback;
+	background-color: $color-terciario;	
+	@include cambiarBorde (double 5px, black);
+}
+
+.etiqueta2{
+	@extend %etiquetaFeedback;
+	background-color: $color-principal;
+	color: $color-texto-fondoazul;
+	@include cambiarBorde (double 5px, black);
+}
+
+.etiqueta3{
+	@extend %etiquetaFeedback;
+	background-color: $color-secundario;
+	color: $color-texto-fondoazul;
+	@include cambiarBorde (double 5px, black);
+}
+

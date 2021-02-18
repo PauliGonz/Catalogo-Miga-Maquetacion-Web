@@ -1,0 +1,68 @@
+/*LAS SIGUIENTES CLASES USAN BEM*/
+/*azul*/
+/*rojo*/
+/*amarillo*/
+.divFeedback {
+  width: 1200px;
+  height: 50px;
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 180px 180px 180px 180px 180px;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+  justify-content: center; }
+
+.etiqueta1, .etiqueta2, .etiqueta3 {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  border-radius: 20px 0px 0px 00px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none; }
+
+.tituloPrincipal {
+  font: "Poppins", sans-serif;
+  text-align: center;
+  color: #FFFFFF; }
+
+.barraFondo {
+  background-color: #0071ce;
+  width: 100%;
+  margin: 10px 20px 10px 20px;
+  padding: 20px 100px 20px 100px;
+  border: double 10px #FFFFFF; }
+
+h1 {
+  font-size: 20px;
+  color: blue; }
+
+nav {
+  background-color: lightyellow; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block;
+      padding-left: 30px; }
+      nav ul li a {
+        color: blue;
+        text-decoration: none; }
+
+.etiqueta1 {
+  background-color: #ffd900;
+  border: double 5px;
+  border-color: black; }
+
+.etiqueta2 {
+  background-color: #0071ce;
+  color: #FFFFFF;
+  border: double 5px;
+  border-color: black; }
+
+.etiqueta3 {
+  background-color: #ea0029;
+  color: #FFFFFF;
+  border: double 5px;
+  border-color: black; }
