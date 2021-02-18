@@ -24,7 +24,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Código para que se adapte a cualquier dispositivo -->
 
 	
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -32,24 +33,90 @@
 	</head>
 
 	<body>
-		<header class="barraFondo">
-			<h1> Mis pedidos </h1> 
+		<header>
+			<div>
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+					<a class="navbar-brand" href="#">
+						<img src="../../sitio_pauli/Imagenes/casita sodimac.png" alt="logo" style="width:45px;">
+					</a>
+					<span class="navbar-text">Catálogo Miga
+					</span>
+					<form class="form-inline" action="/action_page.php">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-primary" type="submit">Search</button>
+					</form>
+				</nav>
+			</div>
+			<div class="mainIndexHijo"> NUEVO M.I.G.A</div>
 		</header>
 
-		<main class="container">
-			<!--a se refiere a un link dentro de la misma carpeta-->
-			<ul class="listaDesordenada">
-				<li><a href="Index Catalogo miga.html"> Ir a home </a></li>
-				<li><a href="Compras.html"> Ir Compras </a></li>
-				<li><a href="Categorias.html"> Ir Categorias </a></li>
-				<li><a href="Mis pedidos.html"> Ir Mis pedidos </a></li>
-				<li><a href="feedback.html"> Ir Feedback </a></li>
-				<li><a href="Contactanos.html"> Ir Contactanos </a></li>
-			</ul>
 
+		<main class="container">
+			<div class="container">
+				<div class="divMainIndex">
+					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Compras.html">Compras</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Mis pedidos.html">Mis pedidos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Contactanos.html">Contáctanos</a>
+							</li>
+							<li class="nav-item dropdown"> <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Feedback</a>
+								
+								<div class="dropdown-menu">
+									
+									<a href="feedback.html" class="dropdown-item">Que te gustó</a>
+									<a href="feedback.html" class="dropdown-item">Sugerencias</a>
+									<a href="feedback.html" class="dropdown-item">Mejoras</a>
+									
+								</div>  
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</main>
 
 		<footer>
+			<div class="containerFooter">
+				<div class="containerSuperior">
+					<div class="columna1">
+						<h4>Más Información</h4>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique.</p>
+					</div>
+						
+					<div class="columna2">
+						<h4>Suscríbete</h4>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique.</p>
+						<a href="#" class="btn btn-block btn-primary btn-info"><span class="glyphicon glyphicon-play"></span> suscríbete</a>
+							
+						<div class="container">  
+							<p>Se parte del nuevo catálogo <i class="fas fa-thumbs-up"></i></p> 
+						</div>
+					</div>
+						
+					<div class="columna3">
+						<h4>Contacto</h4>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique. </p>
+					</div>
+				</div>
+					
+				<div class="containerInferior">
+					<div class="copyright">
+						Todos los derechos reservados
+					</div>
+					<div class="Información">
+						<p>Autor: Paulina González</p> 
+					</div>
+				</div>
+			</div>
 			
 		</footer>
 
