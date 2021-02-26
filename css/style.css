@@ -15,9 +15,15 @@
 	padding-left: 40px;
 }
 
-nav form{
+nav{
 	display: flex;
-	justify-content: end;
+	justify-content: space-around;
+	flex-direction: row;
+
+}
+
+nav form{
+	align-self: flex-end;
 }
 
 /*HTML COMPRAS*/
