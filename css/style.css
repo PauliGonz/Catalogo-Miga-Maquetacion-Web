@@ -22,9 +22,7 @@ nav{
 
 }
 
-nav form{
-	align-self: flex-end;
-}
+
 
 /*HTML COMPRAS*/
 
@@ -405,16 +403,20 @@ td{
 
 .divBodyMain{
 	display: flex;
+	flex-direction: row;
 	width: 100%;
 }
 
-.video{
-	margin-left: 20px;
-	width: 100%;
+.divVideo{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 10px;
 }
 
 video{
 	width: 100%;
+	height: 100%;
 }
 
 
@@ -422,6 +424,7 @@ video{
 
 .divCalendario{
 	width: 50%;
+	margin-right: 10px;
 }
 
 .month {
@@ -488,7 +491,7 @@ video{
 	color: white !important
   }
   
-  /* Add media queries para pantallas pequeñas */
+  /* media queries para pantallas pequeñas */
   @media screen and (max-width:720px) {
 	.weekdays li, .days li {width: 13.1%;}
   }
