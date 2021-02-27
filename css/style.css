@@ -17,7 +17,6 @@
 
 nav{
 	display: flex;
-	justify-content: space-around;
 	flex-direction: row;
 
 }
@@ -186,11 +185,6 @@ nav{
 .divMainIndex{
 	position: relative;
 	padding-top: 50px;
-
-}
-
-nav.navbar{
-	background-color: rgb(0,113,206);
 }
 
 nav.navbar form{
@@ -198,6 +192,10 @@ nav.navbar form{
 	justify-content: end;
 }
 
+.menuFeedback{
+	display: flex;
+	margin-top: 70px;
+}
 
 /* -------------------------INICIO FOOTER INDEX------------------------ */
 
@@ -295,7 +293,7 @@ footer{
 	}
 }
 
-i{
+div p i {
 	color: gold;
 }
 
