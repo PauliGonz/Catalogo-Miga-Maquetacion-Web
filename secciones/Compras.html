@@ -86,7 +86,9 @@
 								</div>  
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../../sitio_pauli/index.html"><i class="fas fa-home"></i></a>
+								<a class="nav-link" href="../../sitio_pauli/index.html">
+									<i class="fas fa-home"></i>
+								</a>
 							</li>
 						</ul>
 					</nav>
@@ -96,7 +98,7 @@
 
 
 
-			<div class="padreDivCompras"> 
+			<div class="container padreDivCompras"> 
 
 				<div class="hijo1"> 
 
@@ -153,7 +155,6 @@
 						  <option value="3">Sillas</option>
 						</select>
 					</div>
-
 					<input type="file" class="form-control-file" id="exampleFormControlFile1">
 
 				</div>
@@ -170,54 +171,104 @@
 					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="SINTRA 3MM + ADHESIVO MATE">
 					  </div>
 					  <div class="form-group">
-					    <label for="formGroupExampleInput2">Instalación</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="SI / NO">
+					    <label for="formGroupExampleInput2">Medida</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="30x20 cm">
 					  </div>
+					  <button type="button" class="btn btn-success">Agregar a la lista
+						<i class="fas fa-file"></i>
+					  </button>
 					</form>
-					<!-- <div class="nieto"> Código miga
-						<h4> MIGA 0001__GR_Caja Abierta</h4>
-					</div>
-					<div class="nieto"> Material
-						<h4> Sintra 3 mm + adhesivo mate 4/0 </h4>
-					</div>
-					<div class="nieto"> Instalación
-						<h4> SI/NO</h4>
-					</div> -->
 				</div>
 
 
 				<div class="hijo3"> 
-					<img src="Imagenes/caja abierta.jpg" alt="gráfica bandera">
+					<img src="../Imagenes/caja abierta.jpg" alt="gráfica bandera">
 				</div>
 
-
-				<div class="hijo4"> 
-					<ul class="list-group list-group-horizontal">
-					  <li class="list-group-item">Código</li>
-					  <li class="list-group-item">Descripción</li>
-					  <li class="list-group-item">Instalación</li>
-					  <li class="list-group-item">Cantidad</li>
-					</ul>
+				<div class="hijo4 responsive">
+					<table class="table table-hover">
+						<thead class="table-light shadow p-4 mb-4 bg-white">
+						  <tr>
+							<th scope="col">Código</th>
+							<th scope="col">Descripción</th>
+							<th scope="col">Instalación</th>
+							<th scope="col">Cantidad</th>
+							<th scope="col">
+								<i class="fas fa-trash"></i>
+							</th>
+						  </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Mig_046</th>
+								<td>Gráfica caja abierta</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td class="form-check-inline">
+									<label class="form-check-label">
+									  <input type="checkbox" class="form-check-input" value="">
+									</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"> Mig_152</th>
+								<td>Banderín carro estacionado</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"> Mig_248</th>
+								<td>Rompefila servicios calefon</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"> Mig_358</th>
+								<td>Gráfica pilar menaje</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+							</tr>
+							
+						  </tr>
+						</tbody>
+					</table>
 				</div>
-
-
-				<div class="hijo5"> 
-					<div> MIG_046 </div>
-
-					<div> Gráfica caja abierta </div>
-
-					<div class="custom-control custom-switch">
-						<input type="checkbox" class="custom-control-input" id="customSwitch1">
-						<label class="custom-control-label" for="customSwitch1">SI / NO</label>
-					</div>
-
-					<div> Cantidad 
-						<select name="Cantidad">
-							<option value="Numero"> 1 </option>
-						</select>
-					</div> 
-				</div>
-
 			</div>
 
 			<br>
@@ -225,7 +276,6 @@
 			
 		</main>
 			
-
 		<footer>
 			<div class="containerFooter">
 				<div class="containerSuperior">
