@@ -60,7 +60,7 @@ footer {
   padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: 'Arenas movedizas', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 20px, 0px, 0px, 20px; }
 
 @media screen and (max-width: 1100px) {
@@ -149,19 +149,17 @@ video {
 
 h1 {
   color: #0071ce;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 h2 {
   color: #0071ce;
-  /*azul*/
-  font-family: 'Poppins', sans-serif;
+  font-family: "Arenas movedizas", sans-serif;
   font-size: 1.5rem;
   margin-left: 20px; }
 
 h3 {
   color: #0071ce;
-  /*azul*/
-  font-family: 'Poppins', sans-serif;
+  font-family: "Arenas movedizas", sans-serif;
   font-size: 30px; }
 
 /* -------------CALENDARIO INDEX-------------- */
@@ -243,37 +241,14 @@ h3 {
   width: 100%;
   height: 850px;
   margin: 10px 20px 10px 20px;
-  /*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: left;*/
   display: grid;
   grid-template-rows: 2.5fr 1fr 5fr;
   grid-template-columns: 3fr 4fr 5fr;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-areas: "pos1 pos2 pos3" "pos1 pos4 pos4" "pos1 pos4 pos4";
-  /*Posición para la grilla*/
-  /*horizontal*/
-  /*justify-content: center;*/
-  /*vertical*/
-  /*align-content: start;*/
-  /*Posición para los hijos*/
-  /*horizontal*/
   justify-items: start;
-  /*vertical*/
   align-items: start; }
-
-.hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
-  border: solid 2px #ea0029;
-  border-radius: 10px;
-  border-width: 2px;
-  color: white;
-  text-align: center;
-  font-family: "Arenas movedizas", sans-serif;
-  font-size: 15px;
-  margin-top: 5px; }
 
 .hijo1 {
   grid-area: pos1;
@@ -288,15 +263,6 @@ h3 {
   justify-content: center;
   grid-area: pos2; }
 
-.nieto {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  /*padding-top: 20px;
-	grid-gap: 10px;*/ }
-
 .hijo3 {
   grid-area: pos3;
   display: flex;
@@ -309,38 +275,12 @@ h3 {
   grid-area: pos4; }
 
 .homecenter {
-  background-color: #0071ce; }
+  background-color: #0071ce;
+  color: white; }
 
 .constructor {
   background-color: #ffd900;
-  color: black;
-  margin-top: 20px; }
-
-.parrafoFieldset {
-  color: red; }
-
-.listaDesordenada {
-  font-family: 'Poppins', sans-serif; }
-
-.listaDesordenada li {
-  list-style: none;
-  color: blue;
-  display: inline-block;
-  padding-left: 20px; }
-
-.footer {
-  background-image: url("Imagenes/casitasodimac2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right; }
-
-.form label {
-  color: #FFFFFF;
-  /*blanco*/
-  background-color: #E4032C;
-  /*rojo*/
-  font-size: 20px;
-  font-family: 'Arenas movedizas', sans-serif; }
+  color: black; }
 
 /*------------------SECCION PEDIDOS------------------*/
 .scrollspy-example {
@@ -348,3 +288,17 @@ h3 {
   height: 200px;
   margin-top: .5rem;
   overflow: auto; }
+
+/*------------------FUNCION SECCION COMPRAS------------------*/
+.hijo1, .hijo2, .hijo3, .hijo4 {
+  border: solid 2px #ea0029;
+  border-radius: 10px;
+  border-width: 2px;
+  text-align: center;
+  font-family: "Arenas movedizas", sans-serif;
+  font-size: 15px;
+  margin-top: 5px; }
+
+.homecenter, .constructor {
+  padding-top: 10px;
+  border-radius: 8px; }

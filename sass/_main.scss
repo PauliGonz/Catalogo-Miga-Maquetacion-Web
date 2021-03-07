@@ -77,22 +77,21 @@ video{
 }
 
 h1{
-	color: rgb(0,113,206);
-	font-family: 'Poppins', sans-serif;
+	color: $color-principal;
+	font-family: $fuente-principal;
 }
 
 h2 {
-	color: rgb(0,113,206); /*azul*/
-	font-family: 'Poppins', sans-serif;
+	color: $color-principal;
+	font-family: $fuente-secundaria;
 	font-size: 1.5rem;
 	margin-left: 20px;
 }
 
 h3 {
-	color: rgb(0,113,206); /*azul*/
-	font-family: 'Poppins', sans-serif;
+	color: $color-principal;
+	font-family: $fuente-secundaria;
 	font-size: 30px;
-
 }
 
 
@@ -163,7 +162,7 @@ h3 {
   
   .days li .active {
 	padding: 5px;
-	background: rgb(0,113,206);
+	background:$color-principal;
 	color: white !important
   }
   
@@ -188,12 +187,6 @@ h3 {
 	width: 100%;
 	height: 850px;
 	margin: 10px 20px 10px 20px;
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: left;*/
-
 	display: grid;
 	grid-template-rows: 2.5fr 1fr 5fr;
 	grid-template-columns: 3fr 4fr 5fr;
@@ -204,41 +197,19 @@ h3 {
 						 "pos1 pos4 pos4"
 						 "pos1 pos4 pos4";
 
-
-	/*Posición para la grilla*/
-	/*horizontal*/
-	/*justify-content: center;*/
-	/*vertical*/
-	/*align-content: start;*/
-
-
-	/*Posición para los hijos*/
-	/*horizontal*/
 	justify-items: start;
-	/*vertical*/
-	align-items: start;
-
-	
-}
-
-.hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
-	border: solid 2px $color-secundario;
-    border-radius: 10px;
-    border-width: 2px;
-	color: white;
-	text-align: center;
-    font-family: $fuente-secundaria;
-    font-size: 15px;
-    margin-top: 5px;
+	align-items: start;	
 }
 
 .hijo1{
+    @extend %hijoGridCompras;
 	grid-area: pos1;
 	width: 100%;
 	height: 100%;
 }
 
 .hijo2{
+    @extend %hijoGridCompras;
 	background-color: $color-terciario;
 	color: black;
 	width: 100%;
@@ -247,72 +218,34 @@ h3 {
 	grid-area: pos2;
 }
 
-.nieto{
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: 1fr;
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
-	/*padding-top: 20px;
-	grid-gap: 10px;*/
-	
-
-}
-
 .hijo3{
+    @extend %hijoGridCompras;
 	grid-area: pos3;
 	display: flex;
 	justify-content: center;
-	height: 100%;
-		
+	height: 100%;		
 }
 
 .hijo4{
+    @extend %hijoGridCompras;
 	width: 100%;
 	height: 100%;
 	grid-area: pos4;
-
 }
 
 .homecenter{
+    @extend %HomecenterConstructor;
     background-color: $color-principal;
+    color: white;  
 }
 
 .constructor{
+    @extend %HomecenterConstructor;
     background-color: $color-terciario;
     color: black;
-    margin-top: 20px;
-}
-
-.parrafoFieldset{
-	color: red;
 }
 
 
-.listaDesordenada{
-	font-family: 'Poppins', sans-serif;
-}
-
-.listaDesordenada li{
-	list-style: none;
-	color: blue;
-	display: inline-block;
-	padding-left: 20px;
-}
-
-.footer{
-	background-image: url("Imagenes/casitasodimac2.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right;
-}
-
-.form label{
-	color: #FFFFFF; /*blanco*/
-	background-color: #E4032C; /*rojo*/
-	font-size: 20px;
-	font-family: 'Arenas movedizas', sans-serif;
-}
 
 /*------------------SECCION PEDIDOS------------------*/
 

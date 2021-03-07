@@ -1,0 +1,17 @@
+
+/*------------------FUNCION SECCION COMPRAS------------------*/
+
+%hijoGridCompras{
+    border: solid 2px $color-secundario;
+    border-radius: 10px;
+    border-width: 2px;
+	text-align: center;
+    font-family: $fuente-secundaria;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+%HomecenterConstructor{
+    padding-top: 10px;
+    border-radius: 8px;
+}

@@ -1,11 +1,11 @@
 footer{
 	width: 100%;
-	background-color: #54565A;
+	background-color: $color-fondo-footer;
 }
 
 
 .containerFooter{
-	color: #C7C7C7;
+	color: $color-texto-footer;
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
@@ -67,14 +67,14 @@ footer{
 
 .containerInferior{
 	width: 100%;
-	background-color: rgb(0,113,206);
+	background-color: $color-principal;
 	color: lightcyan;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
-	font-family: 'Arenas movedizas', sans-serif;
+	font-family: $fuente-principal;
 	border-radius: 20px, 0px, 0px, 20px;
 }
 
