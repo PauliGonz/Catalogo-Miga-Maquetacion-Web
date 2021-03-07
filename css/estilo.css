@@ -85,12 +85,18 @@ nav {
   display: flex;
   flex-direction: row; }
 
+.contenedor {
+  height: 350px; }
+
+main {
+  background-color: #E9F5FF; }
+
 /*------------------ANIMACION------------------*/
 .animacion {
-  width: 195px;
-  height: 285px;
+  width: 216.5px;
+  height: 313px;
   background: url("../Imagenes/Ilustracion.png");
-  animation: ilustracion 2s steps(4) infinite;
+  animation: ilustracion 1.5s steps(4) infinite;
   animation-direction: reverse;
   position: relative;
   left: 8px; }
@@ -108,7 +114,7 @@ nav {
   border-radius: 50%;
   animation: fondoIlustracion 2s infinite;
   position: absolute;
-  top: 100px;
+  top: 110px;
   left: 30px; }
 
 @keyframes fondoIlustracion {
