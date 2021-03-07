@@ -222,30 +222,28 @@ h3 {
 }
 
 .hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
-	border: solid 2px rgb(214,226,245);
+	border: solid 2px $color-secundario;
+    border-radius: 10px;
+    border-width: 2px;
 	color: white;
-	text-align: left;
-
+	text-align: center;
+    font-family: $fuente-secundaria;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .hijo1{
-	background-color: #E4032C; /*rojo*/
 	grid-area: pos1;
 	width: 100%;
 	height: 100%;
-
-
 }
 
 .hijo2{
-	background-color: rgb(255,217,0); /*amarillo*/
+	background-color: $color-terciario;
 	color: black;
 	width: 100%;
 	height: 100%;
-
-	border-radius: 10px;
 	justify-content: center;
-
 	grid-area: pos2;
 }
 
@@ -276,6 +274,15 @@ h3 {
 
 }
 
+.homecenter{
+    background-color: $color-principal;
+}
+
+.constructor{
+    background-color: $color-terciario;
+    color: black;
+    margin-top: 20px;
+}
 
 .parrafoFieldset{
 	color: red;

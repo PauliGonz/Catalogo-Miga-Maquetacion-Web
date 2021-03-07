@@ -266,24 +266,25 @@ h3 {
   align-items: start; }
 
 .hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
-  border: solid 2px #d6e2f5;
+  border: solid 2px #ea0029;
+  border-radius: 10px;
+  border-width: 2px;
   color: white;
-  text-align: left; }
+  text-align: center;
+  font-family: "Arenas movedizas", sans-serif;
+  font-size: 15px;
+  margin-top: 5px; }
 
 .hijo1 {
-  background-color: #E4032C;
-  /*rojo*/
   grid-area: pos1;
   width: 100%;
   height: 100%; }
 
 .hijo2 {
   background-color: #ffd900;
-  /*amarillo*/
   color: black;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   justify-content: center;
   grid-area: pos2; }
 
@@ -306,6 +307,14 @@ h3 {
   width: 100%;
   height: 100%;
   grid-area: pos4; }
+
+.homecenter {
+  background-color: #0071ce; }
+
+.constructor {
+  background-color: #ffd900;
+  color: black;
+  margin-top: 20px; }
 
 .parrafoFieldset {
   color: red; }
