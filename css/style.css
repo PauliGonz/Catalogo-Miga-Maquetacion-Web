@@ -1,4 +1,49 @@
 
+
+.animacion{
+    width: 195px;
+    height: 285px;
+    background: url("../Imagenes/Ilustracion.png");
+	animation: ilustracion 2s steps(4) infinite;
+	animation-direction: reverse;
+	position: relative;
+	left: 8px;
+}
+
+@keyframes ilustracion {
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 866px;
+	}
+}
+
+.fondoaAnimacion{
+	width: 220px;
+	height: 220px;
+	background-color: yellow;
+	border-radius: 50%;
+	animation: fondoIlustracion 2s infinite;
+	position: absolute;
+	top: 150px;
+	left: 30px;
+}
+
+@keyframes fondoIlustracion{
+	0%{
+		transform: scale(1);
+		color: yellow;
+	}
+
+	50%{
+			
+	}
+}
+
+
+
+
 /*------------------CLASES UNIVERSALES------------------*/
 
 *{
