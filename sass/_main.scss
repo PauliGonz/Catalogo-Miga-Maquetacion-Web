@@ -230,8 +230,19 @@ h3 {
 	width: 100%;
 	height: 100%;
 	grid-area: pos4;
-    overflow: scroll;
+    overflow-y: scroll;
 }
+
+.table .sticky{
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.table thead tr .sticky{
+    background-color: white;
+}
+
 
 .homecenter{
     @extend %HomecenterConstructor;
@@ -243,6 +254,10 @@ h3 {
     @extend %HomecenterConstructor;
     background-color: $color-terciario;
     color: black;
+}
+
+.botonPedido{
+    position: fixed;
 }
 
 

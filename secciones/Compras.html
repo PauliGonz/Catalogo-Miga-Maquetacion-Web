@@ -305,12 +305,12 @@
 					<table class="table table-hover">
 						<thead class="table-light shadow p-4 mb-4 bg-white">
 						  <tr>
-							<th scope="col">Código</th>
-							<th scope="col">Descripción</th>
-							<th scope="col">Instalación</th>
-							<th scope="col">Cantidad</th>
-							<th scope="col">
-								<i class="fas fa-trash"></i>
+							<th class="sticky" scope="col">Código</th>
+							<th class="sticky" scope="col">Descripción</th>
+							<th class="sticky" scope="col">Instalación</th>
+							<th class="sticky" scope="col">Cantidad</th>
+							<th class="sticky" scope="col">
+								<i class="sticky fas fa-trash"></i>
 							</th>
 						  </tr>
 						</thead>
@@ -478,6 +478,27 @@
 							<tr>
 								<th scope="row"> Mig_367</th>
 								<td>Grafica Pilar Eco</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+								<td class="form-check-inline">
+									<label class="form-check-label">
+									  <input type="checkbox" class="form-check-input" value="">
+									</label>
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row"> Mig_475</th>
+								<td>Señaletica Pasillo</td>
 								<td class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" id="customSwitch1">
 									<label class="custom-control-label" for="customSwitch1">Si/No</label>
