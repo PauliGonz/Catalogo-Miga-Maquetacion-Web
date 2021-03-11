@@ -1,6 +1,10 @@
 
 main{
     background-color: $color-fondo-main;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: calc(100vh - 59,73px - 368px);
 }
 
 /*------------------ANIMACION------------------*/
@@ -38,19 +42,20 @@ main{
 @keyframes fondoIlustracion{
 	0%{
 		transform: scale(1);
-		color: yellow;
-	}
-
-	50%{
-			
-	}
+		color: yellow; 
+    }
 }
+
+.textoAnimacion{
+    font-size: 31px;
+}
+
 
 /*------------------SECCION INDEX------------------*/
 
 .divMainIndex{
-	position: relative;
-	padding-top: 50px;
+	// position: relative;
+	padding-top: 75px;
 }
 
 nav.navbar form{
@@ -58,10 +63,16 @@ nav.navbar form{
 	justify-content: end;
 }
 
+.carrusel{
+    padding-top: 20px;
+
+}
+
 .divBodyMain{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+    margin: 2rem 0px 3rem 0;
 }
 
 .divVideo{
@@ -103,7 +114,7 @@ h3 {
 }
 
 .month {
-	padding: 70px 25px;
+	padding: 25px;
 	width: 100%;
 	background: #529cd8;;
 	text-align: center;
@@ -186,7 +197,7 @@ h3 {
 .padreDivCompras{
 	width: 100%;
 	height: 850px;
-	margin: 10px 20px 10px 20px;
+	margin: 30px 20px 30px 20px;
 	display: grid;
 	grid-template-rows: 2.5fr 1fr 5fr;
 	grid-template-columns: 3fr 4fr 5fr;
@@ -233,10 +244,31 @@ h3 {
     overflow-y: scroll;
 }
 
+@media screen and (max-width:993px){
+    .padreDivCompras{
+        grid-template:
+        "pos1 pos1 pos2"
+        ". pos3 pos3"
+        "pos4 pos4 pos4" ;
+    }   
+}
+
+@media screen and (max-width:600px){
+    .padreDivCompras{
+        grid-template:
+        "pos1 pos1 pos1"
+        "pos2 pos2 pos2"
+        ". pos3 pos3" 
+        "pos4 pos4 pos4";
+    }   
+}
+
+
 .table .sticky{
     position: sticky;
     top: 0;
     overflow-y: scroll;
+    z-index: 999; 
 }
 
 .table thead tr .sticky{
@@ -256,10 +288,6 @@ h3 {
     color: black;
 }
 
-.botonPedido{
-    position: fixed;
-}
-
 
 /*------------------SECCION PEDIDOS------------------*/
 
@@ -273,14 +301,13 @@ h3 {
 
 /*------------------SECCION CATEGORÍAS------------------*/
 
-.contenedorCategorias{
-    width: 110px;
-}
 
 
 .imagenCategorias{
     display: flex;
-    justify-self: center;
-    width: 700px;
-    padding-top: 20px;
+    justify-content: center;
+    width: 770px;
+    height: 350px;
+    padding: 20px;
 }
+
