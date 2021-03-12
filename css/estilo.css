@@ -1,7 +1,8 @@
 @charset "UTF-8";
 footer {
   width: 100%;
-  background-color: #54565A; }
+  background-color: #54565A;
+  align-self: flex-end; }
 
 .containerFooter {
   color: #C7C7C7;
@@ -88,11 +89,16 @@ nav {
 .contenedor {
   height: 350px; }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap; }
+
 main {
   background-color: #E9F5FF;
   margin: 0;
   padding: 0;
-  height: auto;
+  width: 100%;
   min-height: calc(100vh - 59,73px - 368px); }
 
 /*------------------ANIMACION------------------*/
