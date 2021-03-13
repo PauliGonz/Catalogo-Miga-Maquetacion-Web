@@ -58,74 +58,76 @@
 
 
 		<main>
-			<div class="container">
-				<div class="divMainIndex">
-					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
-						<ul class="nav nav-pills">
-							<li class="nav-item">
-								<a class="nav-link" href="Compras.html">Compras</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="Categorias.html">Categorías</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="Mis pedidos.html">Mis pedidos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="Contactanos.html">Contáctanos</a>
-							</li>
-							<li class="nav-item dropdown"> <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Feedback</a>
+			
+			<div class="divMainIndex container">
+				<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="Compras.html">Compras</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Categorias.html">Categorías</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Mis pedidos.html">Mis pedidos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="Contactanos.html">Contáctanos</a>
+						</li>
+						<li class="nav-item dropdown"> <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Feedback</a>
 								
-								<div class="dropdown-menu">
+							<div class="dropdown-menu">
 									
-									<a href="feedback.html" class="dropdown-item">Que te gustó</a>
-									<a href="" class="dropdown-item">Sugerencias</a>
-									<a href="" class="dropdown-item">Mejoras</a>
+								<a href="feedback.html" class="dropdown-item">Que te gustó</a>
+								<a href="" class="dropdown-item">Sugerencias</a>
+								<a href="" class="dropdown-item">Mejoras</a>
 									
-								</div>  
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a>
-							</li>
-						</ul>
-					</nav>
+							</div>  
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="contenedorContactanos">
+				<fieldset>
+					<legend> Completar los siguientes datos </legend>
+		
+					<form action="/action_page.php">
+						<div class="form-group">
+							<label for="name">Nombre y Apellido:</label>
+							<input type="email" class="form-control" placeholder="Ingresa Nombre y Apellido" id="name">
+						 </div>
+						 <div class="form-group">
+							<label for="pwd">Cargo:</label>
+							<input type="email" class="form-control" placeholder="Ej: Decorador" id="pwd">
+						 </div>
+						 <div class="form-group">
+							<label for="email">Dirección Email:</label>
+							<input type="email" class="form-control" placeholder="Ingresa email" id="email">
+						 </div>
+						 <div class="form-group">
+							<label for="pwd">CC Tienda:</label>
+							<input type="texto" class="form-control" placeholder="ej: 738 Los Domínicos" id="pwd">
+						 </div>
+						 <div class="form-group">
+							  <label for="comment">Comentarios:</label>
+							  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="form-group form-check">
+							<label class="form-check-label">
+							  <input class="form-check-input" type="checkbox"> Remember me
+							</label>
+					  	</div>
+					  		<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</fieldset>
+				<div>
+					<img src="../Imagenes/Ilustracion-05.png" alt="">
 				</div>
 			</div>
-
-
-			<fieldset class="container">
-				<legend> Completar los siguientes datos </legend>
-	
-				<form action="/action_page.php">
-					<div class="form-group">
-					    <label for="email">Nombre y Apellido:</label>
-					    <input type="email" class="form-control" placeholder="Ingresa email" id="email">
-				 	</div>
-				 	<div class="form-group">
-					    <label for="email">Cargo:</label>
-					    <input type="email" class="form-control" placeholder="Ej: Decorador" id="email">
-				 	</div>
-				 	<div class="form-group">
-					    <label for="email">Dirección Email:</label>
-					    <input type="email" class="form-control" placeholder="Ingresa email" id="email">
-				 	</div>
-				 	<div class="form-group">
-					    <label for="pwd">CC Tienda:</label>
-					    <input type="password" class="form-control" placeholder="ej: 738 Los Domínicos" id="pwd">
-				 	</div>
-				 	<div class="form-group">
-  						<label for="comment">Comentarios:</label>
-  						<textarea class="form-control" rows="5" id="comment"></textarea>
-					</div>
-				 	</div>
-					<div class="form-group form-check">
-					    <label class="form-check-label">
-					      <input class="form-check-input" type="checkbox"> Remember me
-					    </label>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-			</fieldset>
 
 		</main>
 
@@ -154,12 +156,12 @@
 				</div>
 					
 				<div class="containerInferior">
-					<div class="copyright">
+					<small class="copyright">
 						Todos los derechos reservados
-					</div>
-					<div class="Información">
+					</small>
+					<small class="Información">
 						<p>Autor: Paulina González</p> 
-					</div>
+					</small>
 				</div>
 			</div>
 

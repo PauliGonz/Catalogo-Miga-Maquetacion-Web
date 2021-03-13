@@ -6,13 +6,14 @@ body{
 
 main{
     background-color: $color-fondo-main;
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 100%;
     min-height: calc(100vh - 59,73px - 368px);
+	max-width: 1200px;
 }
 
-/*------------------ANIMACION------------------*/
+/*------------------ANIMACION INDEX------------------*/
 
 .animacion{
     width: 216.5px;
@@ -310,9 +311,86 @@ h3 {
 
 .imagenCategorias{
     display: flex;
+	flex-wrap: wrap;
     justify-content: center;
     width: 770px;
     height: 350px;
     padding: 20px;
 }
 
+/*------------------SECCION CONTÁCTANOS------------------*/
+
+.contenedorContactanos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedorContactanos fieldset{
+	margin: 60px 30px;
+	padding: 0 30px;
+}
+
+.contenedorContactanos img{
+	margin-top: 60px;
+}
+
+.contenedorContactanos legend{
+	font-family: $fuente-principal;
+	font-size: 30px;
+	color: $color-principal;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+
+
+/*------------------SECCION FEEDBACK------------------*/
+
+.tituloFeedback{
+	text-align: center;
+	margin-top: 60px;
+	font-family: $fuente-principal;
+	font-weight: bold;
+}
+
+.cajaContenedor{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.caja{
+	width: 400px;
+	height: 600px;
+	margin: 60px 10px 40px 10px;
+	padding: 20px;
+	border: 3px solid $color-principal;
+	border-radius: 14px;
+	text-align: center;
+	margin-top: 60px;
+	position: relative;
+}
+
+.caja img{
+	width: 60%;
+}
+
+.caja h2{
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.caja:hover{
+	background: $color-terciario;
+}
+
+.caja:hover img{
+	transform: translateY(-90px);
+}
+
+.caja:hover h2{
+	transform: translateY(-90px);
+}
