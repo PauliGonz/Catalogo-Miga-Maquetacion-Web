@@ -147,6 +147,29 @@ nav.navbar form {
 .carrusel {
   padding-top: 20px; }
 
+.carousel-indicators {
+  margin-bottom: 2px; }
+
+.carousel-caption {
+  padding-top: 0px;
+  padding-bottom: -20px;
+  position: absolute;
+  right: 15%;
+  bottom: 0px;
+  left: 15%;
+  z-index: 10;
+  color: #fff;
+  text-align: center; }
+
+.carousel-caption h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: inline-block;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 20px; }
+
 .divBodyMain {
   display: flex;
   flex-direction: row;
@@ -172,11 +195,6 @@ h2 {
   font-family: "Arenas movedizas", sans-serif;
   font-size: 1.5rem;
   margin-left: 20px; }
-
-h3 {
-  color: #0071ce;
-  font-family: "Arenas movedizas", sans-serif;
-  font-size: 30px; }
 
 /* -------------CALENDARIO INDEX-------------- */
 .divCalendario {
@@ -315,21 +333,147 @@ h3 {
   background-color: #ffd900;
   color: black; }
 
-/*------------------SECCION PEDIDOS------------------*/
+/*------------------SECCION CATEGORÍAS------------------*/
+.cajaImagenCategoria {
+  width: 100px;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.imagenCategorias {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  padding: 20px; }
+
+.tituloCategoria {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+
+.contenedorCategoria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 50px; }
+
+.cajaCategoria1 {
+  border: 3px solid #0071ce; }
+
+.cajaCategoria2 {
+  border: 3px solid #ffd900; }
+
+.cajaCategoria3 {
+  border: 3px solid #ea0029; }
+
+.cajaCategoria1 h2 {
+  background-color: #0071ce;
+  color: #FFFFFF; }
+
+.cajaCategoria2 h2 {
+  background-color: #ffd900;
+  color: black; }
+
+.cajaCategoria3 h2 {
+  background-color: #ea0029;
+  color: #FFFFFF; }
+
+.cajaIcono1 {
+  color: #0071ce;
+  border: 1px solid #0071ce; }
+
+.cajaIcono2 {
+  color: #ffd900;
+  border: 1px solid #ffd900; }
+
+.cajaIcono3 {
+  color: #ea0029;
+  border: 1px solid #ea0029; }
+
+.cajaIcono1:hover {
+  transform: scale(1.2); }
+
+.cajaIcono2:hover {
+  transform: scale(1.2); }
+
+.cajaIcono3:hover {
+  transform: scale(1.2); }
+
+.cajaCategoria1:hover {
+  background: #ecebeb; }
+
+.cajaCategoria2:hover {
+  background: #ecebeb; }
+
+.cajaCategoria3:hover {
+  background: #ecebeb; }
+
+.contenedorCategoria img {
+  width: 100%;
+  padding-top: 10px; }
+
+.contenedorCategoria ul {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #0071ce; }
+
+/*------------------SECCION MIS PEDIDOS------------------*/
+.imagenPedido {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.imagenPedido img {
+  width: 70%;
+  margin-top: 20px;
+  border: -3px solid #E9F5FF; }
+
+.contenedorPedido {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 40px 30px 90px 30px;
+  justify-content: center; }
+
+.selectorPeriodo {
+  width: 70%;
+  justify-content: center; }
+
+.selectorPeriodo form {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.selectorPeriodo select:hover {
+  transform: scale(1.2);
+  background-color: #0071ce;
+  color: #FFFFFF; }
+
+.contenedorTipoPedido {
+  width: 70%;
+  justify-content: center; }
+
+.contenedorTipoPedido nav {
+  width: 100%;
+  margin-bottom: 30px; }
+
+.contenedorTipoPedido form {
+  margin-bottom: 30px; }
+
+.contenedorTipoPedido h4 {
+  padding-left: 5px; }
+
 .scrollspy-example {
   position: relative;
   height: 200px;
   margin-top: .5rem;
   overflow: auto; }
-
-/*------------------SECCION CATEGORÍAS------------------*/
-.imagenCategorias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 770px;
-  height: 350px;
-  padding: 20px; }
 
 /*------------------SECCION CONTÁCTANOS------------------*/
 .contenedorContactanos {
@@ -405,3 +549,30 @@ h3 {
 .homecenter, .constructor {
   padding-top: 10px;
   border-radius: 8px; }
+
+/*------------------FUNCION SECCION CATEGORIAS------------------*/
+.cajaCategoria1, .cajaCategoria2, .cajaCategoria3 {
+  border-radius: 14px;
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  margin: 30px 10px 40px 10px; }
+
+.cajaCategoria1 h2, .cajaCategoria2 h2, .cajaCategoria3 h2 {
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 13px; }
+
+.cajaIcono1, .cajaIcono2, .cajaIcono3 {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: -60px;
+  padding: 5px;
+  background-color: white;
+  justify-items: center;
+  border-radius: 100%;
+  font-size: 40px; }

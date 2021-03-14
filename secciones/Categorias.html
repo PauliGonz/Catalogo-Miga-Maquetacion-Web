@@ -15,7 +15,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+		<script src="https://kit.fontawesome.com/085b120036.js" crossorigin="anonymous"></script>
+		
 		<!------------------------------------SEO------------------------------------>
 
 		<meta name="description" content="Página sobre catálogo de compra para la mantención de gráficas en tiendas de Sodimac"> <!-- para que a página pueda ser buscada desde un explorador -->
@@ -55,7 +56,7 @@
 			</div>
 			
 		</header>
-		
+		<!-- col-sm-12 col-md-4 col-lg-4" -->
 		<main>
 			<div class="container">
 				<div class="divMainIndex">
@@ -91,64 +92,68 @@
 				</div>
 			</div>
 
-			<div>
-				<img class="imagenCategorias container" src="../Imagenes/Ilustracion2.png" alt="">
+			<div class="cajaImagenCategoria container">
+				<img class="imagenCategorias" src="../Imagenes/Ilustracion2.png" alt="">
 			</div>
 
-			<div class="container">
-				<fieldset>
-					<div class="row">
-						<h1> lista de categorías</h1>
+			<h1 class="tituloCategoria">LISTA DE CATEGORÍAS</h1>
+			<div class="contenedorCategoria">
+				<div class="cajaCategoria1">
+					<div class="cajaIcono1">
+						<i class="fas fa-home"></i>
 					</div>
-				
-					<div class="row">
-						<div class="col-sm-12 col-md-4 col-lg-4" style="border: 2px solid black; background-color: lightblue">
-							<h2> Categorías area Blanda</h2>
-							<ul style="list-style-type: none">							
-								<li> Iluminación</li>
-								<li> Pisos</li>
-								<li> Pinturas</li>
-								<li> Menaje</li>
-								<li> Organización</li>
-								<li> Jardín Interior</li>
-								<li> Jardín Exterior</li>
-								<li> Muebles</li>
-								<li> Línea Blanca</li>
-								<li> Temporada</li>
-							</ul>
-						</div>
+					<h2>Área Hogar</h2>
+					<img src="../Imagenes/hogar.jpg" alt="">
+					<ul style="list-style-type: none">							
+						<li> Iluminación</li>
+						<li> Pisos</li>
+						<li> Pinturas</li>
+						<li> Menaje</li>
+						<li> Organización</li>
+						<li> Jardín Interior</li>
+						<li> Jardín Exterior</li>
+						<li> Muebles</li>
+						<li> Línea Blanca</li>
+						<li> Temporada</li>
+					</ul>
+				</div>
 
-					
-						<div class="col-sm-12 col-md-4 col-lg-4" style="border: 2px solid black; background-color: lightyellow">
-							<h2> Categorías area Dura</h2>
-							<ul style="list-style-type: none">							
-								<li> Electricidad</li>
-								<li> Gasfitería</li>
-								<li> Fijaciones</li>
-								<li> Quincallería</li>
-								<li> Seguridad</li>
-								<li> Puertas y Ventanas</li>
-								<li> Casa Inteligente</li>
-								<li> Ferretería</li>
-							</ul>
-						</div>
-						<div class="col-sm-12 col-md-4 col-lg-4" style="border: 2px solid black; background-color: grey">
-							<h2 style="color:white;"> Categorías Patio Constructor</h2>
-							<ul style="list-style-type: none">							
-								<li> Maderas</li>
-								<li> Tableros</li>
-								<li> Fierros</li>
-								<li> Fosas</li>
-								<li> Ensacados</li>
-								<li> Ladrillos</li>
-								<li> Techubres</li>
-								<li> Obra gruesa</li>
-							</ul>
-						</div>
+				<div class="cajaCategoria2">
+					<div class="cajaIcono2">
+						<i class="fas fa-toolbox"></i>
 					</div>
-				</fieldset>
-			</div>
+					<h2>Área Construcción</h2>
+					<img src="../Imagenes/construccion.png" alt="">
+					<ul style="list-style-type: none">							
+						<li> Electricidad</li>
+						<li> Gasfitería</li>
+						<li> Fijaciones</li>
+						<li> Quincallería</li>
+						<li> Seguridad</li>
+						<li> Puertas y Ventanas</li>
+						<li> Casa Inteligente</li>
+						<li> Ferretería</li>
+					</ul>
+				</div>
 
+				<div class="cajaCategoria3">
+					<div class="cajaIcono3">
+						<i class="fas fa-hard-hat"></i>
+					</div>
+					<h2>Área Patio</h2>
+					<img src="../Imagenes/patio.png" alt="">
+					<ul style="list-style-type: none">							
+						<li> Maderas</li>
+						<li> Tableros</li>
+						<li> Fierros</li>
+						<li> Fosas</li>
+						<li> Ensacados</li>
+						<li> Ladrillos</li>
+						<li> Techubres</li>
+						<li> Obra gruesa</li>
+					</ul>
+				</div>
+			</div>	
 		</main>
 
 		<footer>
@@ -156,12 +161,12 @@
 				<div class="containerSuperior">
 					<div class="columna1">
 						<h4>Más Información</h4>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique.</p>
+						<p>Para más información, mira el video explicativo de como realizar el pedido de tu tienda en la sección principal. Revisa el calendario de pedidos trimestral para realizar tu compra con tiempo. Revisa el catálogo completo en la sección Mis pedidos. </p>
 					</div>
 						
 					<div class="columna2">
 						<h4>Suscríbete</h4>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique.</p>
+						<p>Ayúdanos a realizar en conjunto un proceso más sencillo y fácil de comprar la mantención de las gráficas y accesorios de las tiendas. Colabora de manera participativa y constructiva. </p>
 						<a href="#" class="btn btn-block btn-primary btn-info"><span class="glyphicon glyphicon-play"></span> suscríbete</a>
 							
 						<div class="container">  
@@ -171,7 +176,7 @@
 						
 					<div class="columna3">
 						<h4>Contacto</h4>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde eius ea inventore ad fugiat delectus? Pariatur, alias autem harum, amet praesentium ut, mollitia ex molestiae consequatur a nesciunt similique. </p>
+						<p>Siempre puedes consultar con las siguientes áreas: Área de Operaciones para dudas por proceso de compra del Miga. Área de Compras para dudas de SAP. Área Store Planning para dudas con el flujo Mesa de trabajo. Área de Diseño de Tiendas para dudas con gráficas y accesorios . </p>
 					</div>
 				</div>
 					

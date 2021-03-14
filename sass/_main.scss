@@ -71,6 +71,31 @@ nav.navbar form{
 
 .carrusel{
     padding-top: 20px;
+}
+
+.carousel-indicators{
+	margin-bottom: 2px;
+}
+
+.carousel-caption{
+	padding-top: 0px;
+	padding-bottom: -20px;
+	position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+.carousel-caption h2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	display: inline-block;
+	margin: auto;
+	color: $color-texto-fondoazul;
+	font-size: 20px;
 
 }
 
@@ -103,12 +128,6 @@ h2 {
 	font-family: $fuente-secundaria;
 	font-size: 1.5rem;
 	margin-left: 20px;
-}
-
-h3 {
-	color: $color-principal;
-	font-family: $fuente-secundaria;
-	font-size: 30px;
 }
 
 
@@ -294,28 +313,190 @@ h3 {
     color: black;
 }
 
+/*------------------SECCION CATEGORÍAS------------------*/
 
-/*------------------SECCION PEDIDOS------------------*/
+.cajaImagenCategoria{
+	width: 100px;
+	display: flex;
+	padding: 20px 40px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.imagenCategorias{
+    display: flex;
+	flex-wrap: wrap;
+    width: 700px;
+    padding: 20px;
+}
+
+.tituloCategoria{
+	text-align: center;
+	margin-top: 10px;
+	font-family: $fuente-principal;
+	font-weight: bold;
+}
+
+.contenedorCategoria{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+}
+
+.cajaCategoria1{
+	@extend %cajaCategoria;
+	border: 3px solid $color-principal;
+}
+
+.cajaCategoria2{
+	@extend %cajaCategoria;
+	border: 3px solid $color-terciario;
+}
+
+.cajaCategoria3{
+	@extend %cajaCategoria;
+	border: 3px solid $color-secundario;
+}
+
+.cajaCategoria1 h2{
+	@extend %contenedorCategoria;
+	background-color: $color-principal;
+	color: $color-texto-fondoazul;
+}
+
+.cajaCategoria2 h2{
+	@extend %contenedorCategoria;
+	background-color: $color-terciario;
+	color: black;
+}
+
+.cajaCategoria3 h2{
+	@extend %contenedorCategoria;
+	background-color: $color-secundario;
+	color: $color-texto-fondoazul;
+}
+
+
+.cajaIcono1{
+	@extend %cajaIcono;
+	color: $color-principal;
+	border: 1px solid $color-principal;
+}
+
+.cajaIcono2{
+	@extend %cajaIcono;
+	color: $color-terciario;
+	border: 1px solid $color-terciario;
+}
+
+.cajaIcono3{
+	@extend %cajaIcono;
+	color: $color-secundario;
+	border: 1px solid $color-secundario;
+}
+
+.cajaIcono1:hover{
+	transform: scale(1.2);
+}
+
+.cajaIcono2:hover{
+	transform: scale(1.2);
+}
+
+.cajaIcono3:hover{
+	transform: scale(1.2);
+}
+
+.cajaCategoria1:hover{
+	background: #ecebeb;
+}
+
+.cajaCategoria2:hover{
+	background: #ecebeb;
+}
+
+.cajaCategoria3:hover{
+	background: #ecebeb;
+}
+
+.contenedorCategoria img{
+	width: 100%;
+	padding-top: 10px;
+}
+
+.contenedorCategoria ul{
+	font-size: 20px;
+	padding-top: 10px;
+	color: $color-principal;
+}
+
+/*------------------SECCION MIS PEDIDOS------------------*/
+
+.imagenPedido{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.imagenPedido img{
+	width: 70%;
+	margin-top: 20px;
+	border: -3px solid $color-fondo-main;
+
+}
+
+.contenedorPedido{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 40px 30px 90px 30px;
+	justify-content: center;
+}
+
+.selectorPeriodo{
+	width: 70%;
+	justify-content: center;
+}
+.selectorPeriodo form{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.selectorPeriodo select:hover{
+	transform: scale(1.2);
+	background-color: $color-principal;
+	color: $color-texto-fondoazul;
+}
+
+.contenedorTipoPedido{
+	width: 70%;
+	justify-content: center;
+}
+
+.contenedorTipoPedido nav{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.contenedorTipoPedido form{
+	margin-bottom: 30px;
+}
+
+.contenedorTipoPedido h4{
+	padding-left: 5px;
+}
 
 .scrollspy-example {
 	position: relative;
 	height: 200px;
 	margin-top: .5rem;
 	overflow: auto;
-}
-
-
-/*------------------SECCION CATEGORÍAS------------------*/
-
-
-
-.imagenCategorias{
-    display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-    width: 770px;
-    height: 350px;
-    padding: 20px;
 }
 
 /*------------------SECCION CONTÁCTANOS------------------*/
