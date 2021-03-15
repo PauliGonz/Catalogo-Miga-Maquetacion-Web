@@ -75,6 +75,11 @@ div p i {
   .columna2 .colmna3 {
     margin-top: 40px; } }
 
+@media screen and (max-width: 576px) {
+  .containerSuperior {
+    justify-content: center;
+    padding-left: 70px; } }
+
 /*------------------CLASES UNIVERSALES------------------*/
 * {
   padding: 0px;
@@ -139,8 +144,14 @@ main {
 
 @media screen and (max-width: 576px) {
   .fondoaAnimacion {
-    position: fixed;
-    top: 15em; } }
+    top: 15em;
+    margin-top: 80px;
+    left: 180px; }
+  .carrusel {
+    margin-top: 400px; }
+  .hijoNav {
+    width: 180px;
+    margin-right: 40px; } }
 
 /*------------------SECCION INDEX------------------*/
 .divMainIndex {

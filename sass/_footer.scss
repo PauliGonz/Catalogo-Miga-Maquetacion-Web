@@ -98,3 +98,11 @@ div p i {
 		margin-top: 40px;
 	}
 }
+
+@media screen and (max-width: 576px){
+	.containerSuperior{
+		justify-content: center;
+		padding-left: 70px;
+	}
+
+}
