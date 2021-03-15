@@ -62,15 +62,42 @@ main{
 	.fondoaAnimacion{
 		top: 15em;
 		margin-top: 80px;
-		left: 180px
+		left: 100px;
 	}
 	.carrusel{
 		margin-top: 400px;
 	}
 
-	.hijoNav{
-		width: 180px;
-		margin-right: 40px;
+	.navbar form{
+		display: none;
+		width: 170px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width:768px){
+	.fondoaAnimacion{
+		left: 260px;
+		margin-top: 70px;
+	}
+	.carrusel{
+		margin-top: 400px;
+	}
+}
+
+@media screen and (max-width:1550px){
+	.fondoaAnimacion{
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width:1230px){
+	.fondoaAnimacion{
+		margin-top: 70px;
+		left: 480px;
+	}
+	.carrusel{
+		margin-top: 400px;
 	}
 }
 
@@ -142,6 +169,20 @@ h2 {
 	font-family: $fuente-secundaria;
 	font-size: 1.5em;
 	margin-left: 1.25em;
+}
+
+@media screen and (max-width:576px){
+	.fondoaAnimacion{
+		top: 15em;
+		margin-top: 80px;
+		left: 150px;
+	}
+
+	.navbar form{
+		display: none;
+		width: 170px;
+		margin-right: 15px;
+	}
 }
 
 
@@ -289,6 +330,23 @@ h2 {
 	grid-area: pos4;
     overflow-y: scroll;
 }
+
+@media screen and (max-width:576px){
+	.hijo4{
+		margin-bottom: 200px;
+		background-color: white;
+	}
+
+	.hijo3{
+		z-index: auto;
+	}
+
+	.inferiorCompras{
+		margin-top: 630px;
+	}
+	
+}
+
 
 @media screen and (max-width:993px){
     .padreDivCompras{
@@ -456,6 +514,19 @@ h2 {
 	color: $color-principal;
 }
 
+@media screen and (max-width:576px){
+	.navbar form{
+		width: 170px;
+		margin-right: 15px;
+	}
+
+	.imagenCategorias{
+		width: 450px;
+		padding: 20px;
+	}
+}
+
+
 /*------------------SECCION MIS PEDIDOS------------------*/
 
 .imagenPedido{
@@ -521,6 +592,13 @@ h2 {
 	overflow: auto;
 }
 
+@media screen and (max-width:576px){
+	.navbar form{
+		width: 170px;
+		margin-right: 15px;
+	}
+}
+
 /*------------------SECCION CONTÁCTANOS------------------*/
 
 .contenedorContactanos{
@@ -547,6 +625,25 @@ h2 {
 	padding-bottom: 1.25rem;
 }
 
+@media screen and (max-width:576px){
+	.navbar form{
+		width: 170px;
+		margin-right: 15px;
+	}
+
+	.contenedorContactanos{
+		display: flex;
+		flex-direction: column-reverse;
+		margin: auto;
+		align-items: center;
+
+	}
+
+	.contenedorContactanos img{
+		width: 170px;
+		margin-top: 20px;
+	}
+}
 
 
 /*------------------SECCION FEEDBACK------------------*/
@@ -598,3 +695,11 @@ h2 {
 .caja:hover h2{
 	transform: translateY(-90px);
 }
+
+@media screen and (max-width:576px){
+	.navbar form{
+		width: 170px;
+		margin-right: 15px;
+	}
+}
+

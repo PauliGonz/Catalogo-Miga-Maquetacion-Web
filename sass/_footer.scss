@@ -105,4 +105,16 @@ div p i {
 		padding-left: 70px;
 	}
 
+	footer{
+		margin-top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.containerSuperior{
+		justify-content: center;
+		padding-left: 70px;
+	}
+
 }
