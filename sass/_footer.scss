@@ -8,7 +8,7 @@ footer{
 .containerFooter{
 	color: $color-texto-footer;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 75em;
 	margin: auto;
 	
 }
@@ -17,52 +17,52 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	font-family: $fuente-secundaria;
-	padding: 40px;
+	padding: 2.5em;
 }
 
 .columna1{
-	width: 400px;
-	margin-right: 30px;
+	width: 25em;
+	margin-right: 1.87em;
 	
 }
 
 .columna1 h4{
-	font-size: 22px;
-	margin-top: 20px;
+	font-size: 1.37em;
+	margin-top: 1.25rem;
 }
 
 .columna1 p{
-	font-size: 14px;
+	font-size: 0.87em;
 }
 
 .columna2{
-	width: 400px;
-	margin-top: 20px;
-	margin-right: 30px;
+	width: 25em;
+	margin-top: 1.25em;
+	margin-right: 1.87em;
 }
 
 .columna2 h4{
-	font-size: 22px;
+	font-size: 1.37em;
 }
 
 .columna2 p{
-	font-size: 14px;
+	font-size: 0.87em;
 }
 
 .columna2 div p{
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .columna3{
-	width: 400px;
-	margin-top: 20px;
+	width: 25rem;
+	margin-top: 1.25rem;
 }
 
 .columna3 h4{
-	font-size: 22px;
+	font-size: 1.37em;
 }
 
 .columna3 p{
-	font-size: 14px;
+	font-size: 0.87em;
 	margin: auto;
 }
 
@@ -72,17 +72,22 @@ footer{
 	color: lightcyan;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-top: 0.625rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 	font-family: $fuente-principal;
-	border-radius: 20px, 0px, 0px, 20px;
+	border-radius: 1.25rem, 0rem, 0rem, 1.25rem;
 }
 
-@media screen and (max-width: 1100px){
+div p i {
+	color: gold;
+}
+
+@media screen and (max-width: 912px){
 
 	.containerSuperior{
 		flex-wrap: wrap;
+
 	}
 
 	.columa1{
@@ -92,8 +97,4 @@ footer{
 	.columna2 .colmna3{
 		margin-top: 40px;
 	}
-}
-
-div p i {
-	color: gold;
 }

@@ -2,6 +2,7 @@ body{
 	display: flex;
 	min-height: 100vh;
 	flex-wrap: wrap;
+	font-size: 16px;
 }
 
 main{
@@ -15,14 +16,30 @@ main{
 
 /*------------------ANIMACION INDEX------------------*/
 
+.fondoaAnimacion{
+	width: 13.75rem;
+	height: 13.75em;
+	background-color: yellow;
+	border-radius: 50%;
+	animation: fondoIlustracion 2s infinite;
+	position: absolute;
+	top: 6.875em;
+	left: 1.875em;
+}
+
+.textoAnimacion{
+    font-size: 1.93em;
+}
+
+
 .animacion{
-    width: 216.5px;
-    height: 313px;
+    width: 13.5313rem;
+    height: 19.5625rem;
     background: url("../Imagenes/Ilustracion.png");
 	animation: ilustracion 1.5s steps(4) infinite;
 	animation-direction: reverse;
 	position: relative;
-	left: 8px;
+	left: 0.5rem;
 }
 
 @keyframes ilustracion {
@@ -30,19 +47,8 @@ main{
 		background-position: 0px;
 	}
 	100%{
-		background-position: 866px;
+		background-position: 54.125em;
 	}
-}
-
-.fondoaAnimacion{
-	width: 220px;
-	height: 220px;
-	background-color: yellow;
-	border-radius: 50%;
-	animation: fondoIlustracion 2s infinite;
-	position: absolute;
-	top: 110px;
-	left: 30px;
 }
 
 @keyframes fondoIlustracion{
@@ -52,16 +58,17 @@ main{
     }
 }
 
-.textoAnimacion{
-    font-size: 31px;
+@media screen and (max-width:576px){
+	.fondoaAnimacion{
+		position: fixed;
+		top: 15em;
+	}
 }
-
 
 /*------------------SECCION INDEX------------------*/
 
 .divMainIndex{
-	// position: relative;
-	padding-top: 75px;
+	padding-top: 4.6875em;
 }
 
 nav.navbar form{
@@ -70,19 +77,16 @@ nav.navbar form{
 }
 
 .carrusel{
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .carousel-indicators{
-	margin-bottom: 2px;
+	margin-bottom: 0.125rem;
 }
 
 .carousel-caption{
-	padding-top: 0px;
-	padding-bottom: -20px;
 	position: absolute;
     right: 15%;
-    bottom: 0px;
     left: 15%;
     z-index: 10;
     color: #fff;
@@ -91,11 +95,10 @@ nav.navbar form{
 .carousel-caption h2{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	display: inline-block;
 	margin: auto;
 	color: $color-texto-fondoazul;
-	font-size: 20px;
+	font-size: 1.25em;
 
 }
 
@@ -110,7 +113,7 @@ nav.navbar form{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	margin-left: 10px;
+	margin-left: 0.625em;
 }
 
 video{
@@ -118,16 +121,18 @@ video{
 	height: 100%;
 }
 
-h1{
+.divVideo h1{
 	color: $color-principal;
 	font-family: $fuente-principal;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 h2 {
 	color: $color-principal;
 	font-family: $fuente-secundaria;
-	font-size: 1.5rem;
-	margin-left: 20px;
+	font-size: 1.5em;
+	margin-left: 1.25em;
 }
 
 
@@ -138,8 +143,15 @@ h2 {
 	margin-right: 10px;
 }
 
+.divCalendario h1{
+	color: $color-principal;
+	font-family: $fuente-principal;
+	font-size: 2em;
+	font-weight: bold;
+}
+
 .month {
-	padding: 25px;
+	padding: 1.56rem;
 	width: 100%;
 	background: #529cd8;;
 	text-align: center;
@@ -152,19 +164,19 @@ h2 {
   
   .month ul li {
 	color: white;
-	font-size: 20px;
+	font-size: 1.25em;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 0.18rem;
   }
   
   .month .prev {
 	float: left;
-	padding-top: 10px;
+	padding-top: 0.62rem;
   }
   
   .month .next {
 	float: right;
-	padding-top: 10px;
+	padding-top: 0.62rem;
   }
   
   .weekdays {
@@ -192,7 +204,7 @@ h2 {
 	width: 13.6%;
 	text-align: center;
 	margin-bottom: 5px;
-	font-size:12px;
+	font-size:0.75rem;
 	color: #777;
   }
   
@@ -221,13 +233,13 @@ h2 {
 
 .padreDivCompras{
 	width: 100%;
-	height: 850px;
-	margin: 30px 20px 30px 20px;
+	height: 53.12em;
+	margin: 1.87em 1.25em 1.87em 1.25em;
 	display: grid;
 	grid-template-rows: 2.5fr 1fr 5fr;
 	grid-template-columns: 3fr 4fr 5fr;
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
+	grid-row-gap: 0.62em;
+	grid-column-gap: 0.625em;
 
 	grid-template-areas: "pos1 pos2 pos3"
 						 "pos1 pos4 pos4"
@@ -318,7 +330,7 @@ h2 {
 .cajaImagenCategoria{
 	width: 100px;
 	display: flex;
-	padding: 20px 40px;
+	padding: 1.25em 2.5em;
 	justify-content: center;
 	flex-wrap: wrap;
 }
@@ -332,9 +344,10 @@ h2 {
 
 .tituloCategoria{
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 0.625rem;
 	font-family: $fuente-principal;
 	font-weight: bold;
+	color: $color-principal;
 }
 
 .contenedorCategoria{
@@ -344,7 +357,7 @@ h2 {
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	padding-top: 50px;
+	padding-top: 3.125em;
 }
 
 .cajaCategoria1{
@@ -429,8 +442,8 @@ h2 {
 }
 
 .contenedorCategoria ul{
-	font-size: 20px;
-	padding-top: 10px;
+	font-size: 1.25em;
+	padding-top: 0.62rem;
 	color: $color-principal;
 }
 
@@ -445,7 +458,7 @@ h2 {
 
 .imagenPedido img{
 	width: 70%;
-	margin-top: 20px;
+	margin-top: 1.25em;
 	border: -3px solid $color-fondo-main;
 
 }
@@ -455,7 +468,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	padding: 40px 30px 90px 30px;
+	padding: 2.5em 1.875em 5.62em 1.87em;
 	justify-content: center;
 }
 
@@ -464,8 +477,8 @@ h2 {
 	justify-content: center;
 }
 .selectorPeriodo form{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 }
 
 .selectorPeriodo select:hover{
@@ -481,11 +494,11 @@ h2 {
 
 .contenedorTipoPedido nav{
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 1.87em;
 }
 
 .contenedorTipoPedido form{
-	margin-bottom: 30px;
+	margin-bottom: 1.87em;
 }
 
 .contenedorTipoPedido h4{
@@ -494,8 +507,8 @@ h2 {
 
 .scrollspy-example {
 	position: relative;
-	height: 200px;
-	margin-top: .5rem;
+	height: 12.5rem;
+	margin-top: 0.5rem;
 	overflow: auto;
 }
 
@@ -509,20 +522,20 @@ h2 {
 }
 
 .contenedorContactanos fieldset{
-	margin: 60px 30px;
-	padding: 0 30px;
+	margin: 3.75em 1.87em;
+	padding: 0 1.87em;
 }
 
 .contenedorContactanos img{
-	margin-top: 60px;
+	margin-top: 3.75em;
 }
 
 .contenedorContactanos legend{
 	font-family: $fuente-principal;
-	font-size: 30px;
+	font-size: 1.875em;
 	color: $color-principal;
 	font-weight: bold;
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 }
 
 
@@ -531,9 +544,10 @@ h2 {
 
 .tituloFeedback{
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 3.75rem;
 	font-family: $fuente-principal;
 	font-weight: bold;
+	color: $color-principal;
 }
 
 .cajaContenedor{
@@ -544,14 +558,14 @@ h2 {
 }
 
 .caja{
-	width: 400px;
-	height: 600px;
-	margin: 60px 10px 40px 10px;
-	padding: 20px;
+	width: 25rem;
+	height: 37.5rem;
+	margin: 3.75rem 0.62rem 2.5rem 0.62rem;
+	padding: 1.25rem;
 	border: 3px solid $color-principal;
 	border-radius: 14px;
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 3.75rem;
 	position: relative;
 }
 
@@ -560,8 +574,8 @@ h2 {
 }
 
 .caja h2{
-	font-size: 30px;
-	margin-top: 10px;
+	font-size: 1.87em;
+	margin-top: 0.62rem;
 }
 
 .caja:hover{
