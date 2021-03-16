@@ -61,16 +61,16 @@ main{
 @media screen and (max-width:576px){
 	.fondoaAnimacion{
 		top: 15em;
-		margin-top: 80px;
-		left: 100px;
+		margin-top: 50px;
 	}
+
 	.carrusel{
 		margin-top: 400px;
 	}
 
 	.navbar form{
 		display: none;
-		width: 170px;
+		width: 150px;
 		margin-right: 15px;
 	}
 }
@@ -461,22 +461,28 @@ h2 {
 }
 
 
+@mixin borde($ancho, $color, $estilo){
+	border-width: $ancho;
+	border-color: $color;
+	border-style: $estilo;
+}
+
 .cajaIcono1{
 	@extend %cajaIcono;
 	color: $color-principal;
-	border: 1px solid $color-principal;
+	@include borde(1px, $color-principal, solid)
 }
 
 .cajaIcono2{
 	@extend %cajaIcono;
 	color: $color-terciario;
-	border: 1px solid $color-terciario;
+	@include borde(1px, $color-terciario, solid)
 }
 
 .cajaIcono3{
 	@extend %cajaIcono;
 	color: $color-secundario;
-	border: 1px solid $color-secundario;
+	@include borde(1px, $color-secundario, solid)
 }
 
 .cajaIcono1:hover{
